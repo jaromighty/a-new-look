@@ -6,9 +6,9 @@
 
 module.exports = {
   siteMetadata: {
-    title: "My Gatsby Starter",
-    description: "A GatsbyJS starter for my projects",
-    siteUrl: "https://localhost",
+    title: "A New Look Restorations and Janitorial Services",
+    description: "A restoration and janitorial service small business serving Daytona Beach and surrounding locations.",
+    siteUrl: "https://anlrestorations.com",
     author: "",
   },
   plugins: [
@@ -23,7 +23,7 @@ module.exports = {
             }
           }
         }`,
-        resolveSiteUrl: () => "http://localhost",
+        resolveSiteUrl: () => "https://anlrestorations.com",
         resolvePages: ({
           allSitePage: { nodes: allPages },
         }) => {
