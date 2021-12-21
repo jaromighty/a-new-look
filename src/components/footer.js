@@ -11,7 +11,7 @@ export default function Footer() {
                     <p className="mt-4 text-lg leading-6 text-green-200">
                         Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.
                     </p>
-                    <Link to="#" className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-green-600 bg-white hover:bg-green-50 sm:w-auto">Contact us today</Link>
+                    <Link to="/contact" className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-green-600 bg-white hover:bg-green-50 sm:w-auto">Contact us today</Link>
                 </div>
             </div>
             <footer className="relative">
