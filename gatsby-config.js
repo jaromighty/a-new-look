@@ -10,6 +10,7 @@ module.exports = {
     description: "A restoration and janitorial service small business serving Daytona Beach and surrounding locations.",
     siteUrl: "https://anlrestorations.com",
     author: "",
+    facebookPage: "https://www.facebook.com/ANewLookCarpetCleaning",
   },
   plugins: [
     'gatsby-plugin-postcss',
