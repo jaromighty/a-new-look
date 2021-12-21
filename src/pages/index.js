@@ -1,10 +1,11 @@
-import React from "react";
+import React, { Fragment, useState } from "react";
 import { Link } from "gatsby";
 import AppLayout from "../components/app-layout";
 import Header from "../components/header";
 import { CheckIcon, CreditCardIcon, ExternalLinkIcon } from "@heroicons/react/outline";
 import Footer from "../components/footer";
 import { useStaticQuery, graphql } from "gatsby";
+import { Dialog, Transition } from '@headlessui/react';
 
 const services = [
     {
@@ -36,6 +37,7 @@ export default function Home() {
             }
           }
         `);
+    const [open, setOpen] = useState(false);
     
     return (
         <AppLayout title="Home">
@@ -176,6 +178,7 @@ export default function Home() {
                                 <div className="relative w-full lg:ml-8">
                                     <div className="w-64 rounded-lg shadow-lg lg:max-w-md mx-auto">
                                         <button
+                                            onClick={() => setOpen(true)}
                                             type="button"
                                             className="relative block w-full bg-white rounded-lg overflow-hidden z-20 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
                                         >
@@ -183,7 +186,7 @@ export default function Home() {
                                             <img
                                                 className="w-full"
                                                 src="/testimonial-thumbnail-1.png"
-                                                alt=""
+                                                alt="testimonial video"
                                             />
                                             <div className="absolute inset-0 w-full h-full flex items-center justify-center" aria-hidden="true">
                                                 <svg className="h-20 w-20 text-green-500" fill="currentColor" viewBox="0 0 84 84">
@@ -199,6 +202,42 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+
+            <Transition.Root show={open} as={Fragment}>
+                <Dialog as="div" className="fixed z-20 inset-0 overflow-y-auto" onClose={setOpen}>
+                    <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                        <Transition.Child
+                            as={Fragment}
+                            enter="ease-out duration-300"
+                            enterFrom="opacity-0"
+                            enterTo="opacity-100"
+                            leave="ease-in duration-200"
+                            leaveFrom="opacity-100"
+                            leaveTo="opacity-0"
+                        >
+                            <Dialog.Overlay className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+                        </Transition.Child>
+
+                        {/* This element is to trick the browser into centering the modal contents. */}
+                        <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">
+                            &#8203;
+                        </span>
+                        <Transition.Child
+                            as={Fragment}
+                            enter="ease-out duration-300"
+                            enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                            enterTo="opacity-100 translate-y-0 sm:scale-100"
+                            leave="ease-in duration-200"
+                            leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                            leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                        >
+                            <video controls className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full">
+                                <source src="/testimonial01.mp4" type="video/mp4" />
+                            </video>
+                        </Transition.Child>
+                    </div>
+                </Dialog>
+            </Transition.Root>
 
             <Footer />
         </AppLayout>
