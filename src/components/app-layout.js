@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./header";
 import SEO from "./seo";
 
 export default function AppLayout({ children, title }) {
