@@ -60,7 +60,7 @@ export default function Home() {
                     <div className="absolute inset-0 bg-green-800 mix-blend-multiply" aria-hidden="true" />
                 </div>
                 <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-36 sm:px-6 lg:px-8">
-                    <h1 className="text-4xl font-extrabold tracking-tight text-green-200 sm:text-5xl lg:text-6xl">Welcome</h1>
+                    <h2 className="text-4xl font-extrabold tracking-tight text-green-200 sm:text-5xl lg:text-6xl">Welcome</h2>
                     <p className="mt-6 text-xl text-green-100 max-w-3xl">
                         Hello, I'm Ron Manning, owner-operator of ANL restorations and janitorial services. Twenty years ago, we started as a company offering carpet, furniture, and tile floor cleaning. Since then, we have added commercial business cleaning, as well as 24-hour emergency water restoration services with all the drying equipment to get your home or business back together. As the years went by, we evolved to complete restoration which includes remolding, painting, installing flood bathroom fixtures, and small plumbing. Our company is small and family-oriented. We are here to provide you with proficient quality service to help you more fully enjoy your home or office.
                     </p>
