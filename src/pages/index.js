@@ -10,19 +10,19 @@ import { Dialog, Transition } from '@headlessui/react';
 const services = [
     {
         name: "Carpet, furniture, tile, and floor cleaning",
-        description: "Integer porttitor pellentesque nisi quis posuere. Praesent sit amet quam eu dolor rhoncus varius vitae id velit.",
+        description: "We use the latest to clean carpet, furniture, and tile or hard surface floors.",
     },
     {
         name: "24-hour emergency water damage restoration",
-        description: "Integer porttitor pellentesque nisi quis posuere. Praesent sit amet quam eu dolor rhoncus varius vitae id velit.",
+        description: "We take honor in providing our customers with emergency restoration service restoring your home or office to its original form.",
     },
     {
         name: "Complete home and office remodeling",
-        description: "Integer porttitor pellentesque nisi quis posuere. Praesent sit amet quam eu dolor rhoncus varius vitae id velit.",
+        description: "Our janitorial service is some of the elite with employees who strive to keep your home or office vibrant and fresh.",
     },
     {
         name: "Complete floor installation",
-        description: "Integer porttitor pellentesque nisi quis posuere. Praesent sit amet quam eu dolor rhoncus varius vitae id velit.",
+        description: "As part of our restoration service, we have incorporated remolding and floor installation to help our customers get their house in order or give it that new look.",
     },
 ];
 
