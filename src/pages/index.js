@@ -10,7 +10,7 @@ import { Dialog, Transition } from '@headlessui/react';
 const services = [
     {
         name: "Carpet, furniture, tile, and floor cleaning",
-        description: "We use the latest to clean carpet, furniture, and tile or hard surface floors.",
+        description: "We use the latest equipment to clean carpet, furniture, and tile or hard surface floors.",
     },
     {
         name: "24-hour emergency water damage restoration",
