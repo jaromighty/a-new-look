@@ -85,7 +85,7 @@ export default function Home() {
                     <div className="max-w-3xl mx-auto text-center">
                         <h2 className="text-3xl font-extrabold text-gray-900">Services to meet your needs</h2>
                         <p className="mt-4 text-lg text-gray-500">
-                            Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.
+                            Quality service is our middle name. Let us know how our services can help you today.
                         </p>
                     </div>
                     <dl className="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
