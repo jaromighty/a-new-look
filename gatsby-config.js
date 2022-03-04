@@ -53,6 +53,14 @@ module.exports = {
           }
         },
       },
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '2',
+        matomoUrl: 'https://analytics.jarom.dev',
+        siteUrl: 'https://anlrestorations.com'
+      }
+    },
   ],
 }
